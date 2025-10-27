@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { ChevronRight, Github } from "lucide-react";
+import { IconStackMiddle } from "@tabler/icons-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -26,15 +26,16 @@ const ITEMS = [
     href: "#features",
     dropdownItems: [
       {
-        title: "Modern product teams",
+        title: "AI Stock Analysis",
         href: "/#feature-modern-teams",
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          "Multi-agent AI system that provides comprehensive stock analysis with debate-style insights",
       },
       {
-        title: "Resource Allocation",
+        title: "Real-time Data",
         href: "/#resource-allocation",
-        description: "Mainline your resource allocation and execution",
+        description:
+          "Access live market data and financial metrics for accurate analysis",
       },
     ],
   },
@@ -52,19 +53,14 @@ export const Navbar = () => {
   return (
     <section
       className={cn(
-        "bg-background/70 absolute left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
+        "bg-background/70 absolute left-1/2 z-50 w-[min(95%,900px)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
         "top-5 lg:top-12",
       )}
     >
-      <div className="flex items-center justify-between px-6 py-3">
+      <div className="flex items-center justify-between px-8 py-4">
         <Link href="/" className="flex shrink-0 items-center gap-2">
-          <Image
-            src="/logo.svg"
-            alt="logo"
-            width={94}
-            height={18}
-            className="dark:invert"
-          />
+          <IconStackMiddle className="size-6" />
+          <span className="text-base font-semibold">StockNotes</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -73,7 +69,7 @@ export const Navbar = () => {
             {ITEMS.map((link) =>
               link.dropdownItems ? (
                 <NavigationMenuItem key={link.label} className="">
-                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-1.5">
+                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-3">
                     {link.label}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -105,7 +101,7 @@ export const Navbar = () => {
                   <Link
                     href={link.href}
                     className={cn(
-                      "relative bg-transparent px-1.5 text-sm font-medium transition-opacity hover:opacity-75",
+                      "relative bg-transparent px-3 text-sm font-medium transition-opacity hover:opacity-75",
                       pathname === link.href && "text-muted-foreground",
                     )}
                   >
@@ -118,7 +114,7 @@ export const Navbar = () => {
         </NavigationMenu>
 
         {/* Auth Buttons */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-4">
           <ThemeToggle />
           <Link href="/login" className="max-lg:hidden">
             <Button variant="outline">
@@ -126,7 +122,7 @@ export const Navbar = () => {
             </Button>
           </Link>
           <a
-            href="https://github.com/shadcnblocks/mainline-nextjs-template"
+            href="https://github.com/stocknotes"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Github className="size-4" />

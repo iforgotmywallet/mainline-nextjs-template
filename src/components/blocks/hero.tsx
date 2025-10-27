@@ -13,23 +13,26 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
+    title: "Real-time data",
+    description:
+      "Access live market data and financial metrics for any stock ticker.",
     icon: CircleDot,
   },
   {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
+    title: "Multi-agent analysis",
+    description:
+      "14 specialist AI agents from news analysts to technical analysts debate different perspectives for comprehensive insights.",
     icon: Blend,
   },
   {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
+    title: "Mono text reports",
+    description: "Clean, readable reports in a consistent monospace format.",
     icon: Diamond,
   },
   {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
+    title: "Parallel execution",
+    description:
+      "Multi-ticker research with simultaneous analysis across multiple stocks for efficient portfolio insights.",
     icon: ChartNoAxesColumn,
   },
 ];
@@ -41,19 +44,24 @@ export const Hero = () => {
         {/* Left side - Main content */}
         <div className="flex-1">
           <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
+            StockNotes AI Reports
           </h1>
 
           <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+            Generate comprehensive stock analysis reports using AI agents with
+            real-time data and debate-style insights
           </p>
+
+          <div className="bg-muted/50 mt-4 rounded-lg border px-4 py-3">
+            <p className="text-foreground text-sm font-medium">
+              ⚡ Each analysis powered by L40S NVIDIA GPU for maximum
+              performance
+            </p>
+          </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
-              </a>
+              <a href="#pricing">Start analyzing</a>
             </Button>
             <Button
               variant="outline"
@@ -61,10 +69,10 @@ export const Hero = () => {
               asChild
             >
               <a
-                href="https://shadcnblocks.com"
+                href="#features"
                 className="max-w-56 truncate text-start md:max-w-none"
               >
-                Built by shadcnblocks.com
+                See how it works
                 <ArrowRight className="stroke-3" />
               </a>
             </Button>
@@ -103,7 +111,7 @@ export const Hero = () => {
       <div className="mt-12 max-lg:ml-6 max-lg:h-[550px] max-lg:overflow-hidden md:mt-20 lg:container lg:mt-24">
         <div className="relative h-[793px] w-full">
           <Image
-            src="/hero.webp"
+            src="/hero_light.png"
             alt="hero"
             fill
             className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"

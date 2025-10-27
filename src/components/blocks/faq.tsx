@@ -10,52 +10,52 @@ import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: "Support",
+    title: "Getting Started",
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: "How do I generate my first stock report?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Simply enter any stock ticker symbol (like AAPL, TSLA, or MSFT) and our AI agents will generate a comprehensive analysis report within seconds using real-time market data.",
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "What data sources does StockNotes use?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "We integrate with multiple premium financial data providers to ensure accuracy and completeness, including real-time market data, financial statements, news feeds, and analyst reports.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "How accurate are the AI-generated reports?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Our multi-agent system cross-references multiple data sources and uses debate-style analysis to provide balanced perspectives. All analysis includes source citations for verification.",
       },
     ],
   },
   {
-    title: "Your account",
+    title: "Features & Pricing",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "What's included in the free plan?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "The free plan includes 5 stock reports per month with basic AI analysis and real-time data access. Perfect for individual investors getting started.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Can I upgrade or downgrade my plan anytime?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes, you can change your plan at any time. Upgrades take effect immediately, while downgrades take effect at the next billing cycle.",
       },
     ],
   },
   {
-    title: "Other questions",
+    title: "Technical Questions",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Do you offer API access?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "API access is available with our Enterprise plan, allowing you to integrate StockNotes analysis directly into your existing workflows and applications.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "How often is the data updated?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Market data is updated in real-time during trading hours. Fundamental data and financial statements are updated as soon as they become available from our data providers.",
       },
     ],
   },

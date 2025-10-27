@@ -1,6 +1,3 @@
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
-
 import type { Metadata } from "next";
 
 import { Footer } from "@/components/blocks/footer";
@@ -9,83 +6,31 @@ import { StyleGlideProvider } from "@/components/styleglide-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/globals.css";
 
-const dmSans = localFont({
-  src: [
-    {
-      path: "../../fonts/dm-sans/DMSans-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-Italic.ttf",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-MediumItalic.ttf",
-      weight: "500",
-      style: "italic",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-SemiBold.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-SemiBoldItalic.ttf",
-      weight: "600",
-      style: "italic",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../../fonts/dm-sans/DMSans-BoldItalic.ttf",
-      weight: "700",
-      style: "italic",
-    },
-  ],
-  variable: "--font-dm-sans",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
   title: {
-    default: "Mainline - Modern Next.js Template",
-    template: "%s | Mainline",
+    default: "StockNotes - AI Stock Analysis Reports",
+    template: "%s | StockNotes",
   },
   description:
-    "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+    "Generate comprehensive AI-powered stock analysis reports with real-time data and multi-agent debate-style analysis for any stock ticker.",
   keywords: [
-    "Next.js",
-    "nextjs template",
-    "nextjs theme",
-    "nextjs starter",
-    "shadcn template",
-    "shadcn theme",
-    "shadcn starter",
-    "tailwind template",
-    "tailwind theme",
-    "tailwind starter",
-    "mdx template",
-    "mdx theme",
-    "mdx starter",
+    "stock analysis",
+    "AI reports",
+    "stock research",
+    "financial analysis",
+    "stock ticker",
+    "investment research",
+    "market analysis",
+    "stock reports",
+    "financial data",
+    "investment tools",
+    "stock insights",
+    "market research",
+    "equity analysis",
   ],
-  authors: [{ name: "shadcnblocks.com" }],
-  creator: "shadcnblocks.com",
-  publisher: "shadcnblocks.com",
+  authors: [{ name: "StockNotes" }],
+  creator: "StockNotes",
+  publisher: "StockNotes",
   robots: {
     index: true,
     follow: true,
@@ -102,26 +47,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon/favicon.ico" }],
   },
   openGraph: {
-    title: "Mainline - Modern Next.js Template",
+    title: "StockNotes - AI Stock Analysis Reports",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    siteName: "Mainline",
+      "Generate comprehensive AI-powered stock analysis reports with real-time data and multi-agent debate-style analysis for any stock ticker.",
+    siteName: "StockNotes",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainline - Modern Next.js Template",
+        alt: "StockNotes - AI Stock Analysis Reports",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mainline - Modern Next.js Template",
+    title: "StockNotes - AI Stock Analysis Reports",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+      "Generate comprehensive AI-powered stock analysis reports with real-time data and multi-agent debate-style analysis for any stock ticker.",
     images: ["/og-image.jpg"],
-    creator: "@ausrobdev",
+    creator: "@stocknotes",
   },
 };
 
@@ -139,7 +84,7 @@ export default function RootLayout({
           src="https://tweakcn.com/live-preview.min.js"
         />
       </head>
-      <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

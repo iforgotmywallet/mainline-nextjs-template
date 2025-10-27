@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: "Reusable issue templates.",
+    title: "Instant report generation.",
     description:
-      "Draft lightning-fast documents with our Smart Instructions and Templates.",
+      "Generate comprehensive stock analysis reports in seconds with AI-powered insights.",
     images: [
       {
-        src: "/resource-allocation/templates.webp",
-        alt: "Issue template interface",
+        src: "/resource-allocation/search.png",
+        alt: "Stock report interface",
         width: 495,
         height: 186,
       },
@@ -22,37 +22,43 @@ const topItems = [
     fade: [""],
   },
   {
-    title: "Simplify your stack.",
-    description: "No more Confluence, SharePoint, or Microsoft Word.",
+    title: "Replace multiple tools.",
+    description:
+      "No more Bloomberg Terminal, Yahoo Finance, or scattered research.",
     images: [
-      { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
+      { src: "/logos/jira.svg", alt: "Bloomberg logo", width: 48, height: 48 },
       { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
       {
         src: "/logos/notion.svg",
-        alt: "Notion logo",
+        alt: "Yahoo Finance logo",
         width: 48,
         height: 48,
       },
-      { src: "/logos/word.svg", alt: "Word logo", width: 48, height: 48 },
+      {
+        src: "/logos/word.svg",
+        alt: "Morningstar logo",
+        width: 48,
+        height: 48,
+      },
       {
         src: "/logos/monday.svg",
-        alt: "Monday logo",
+        alt: "Seeking Alpha logo",
         width: 48,
         height: 48,
       },
       {
         src: "/logos/drive.svg",
-        alt: "Google Drive logo",
+        alt: "MarketWatch logo",
         width: 48,
         height: 48,
       },
       {
         src: "/logos/jira.svg",
-        alt: "Jira logo",
+        alt: "TradingView logo",
         width: 48,
         height: 48,
       },
-      { src: "/logos/asana.svg", alt: "Asana logo", width: 48, height: 48 },
+      { src: "/logos/asana.svg", alt: "Finviz logo", width: 48, height: 48 },
     ],
     className:
       "flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 md:[&>.title-container]:translate-x-2 xl:[&>.title-container]:translate-x-4 [&>.title-container]:translate-x-0",
@@ -62,13 +68,13 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: "Graveyard it.",
+    title: "Historical analysis.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
+      "Access years of historical data and performance metrics for comprehensive analysis.",
     images: [
       {
-        src: "/resource-allocation/graveyard.webp",
-        alt: "Graveyard interface",
+        src: "/resource-allocation/history.png",
+        alt: "Historical data interface",
         width: 305,
         height: 280,
       },
@@ -78,13 +84,13 @@ const bottomItems = [
     fade: ["bottom"],
   },
   {
-    title: "Task discussions.",
+    title: "Agent debates.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Multiple AI agents analyze different aspects and debate findings for balanced insights.",
     images: [
       {
-        src: "/resource-allocation/discussions.webp",
-        alt: "Task discussions interface",
+        src: "/resource-allocation/discussion.png",
+        alt: "AI agent debates interface",
         width: 320,
         height: 103,
       },
@@ -94,13 +100,13 @@ const bottomItems = [
     fade: [""],
   },
   {
-    title: "Notifications.",
+    title: "L40S GPU acceleration.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Every analysis runs on enterprise-grade NVIDIA L40S GPUs for maximum computational power and speed.",
     images: [
       {
-        src: "/resource-allocation/notifications.webp",
-        alt: "Notifications interface",
+        src: "/resource-allocation/nvdia.png",
+        alt: "GPU acceleration interface",
         width: 305,
         height: 280,
       },
@@ -119,7 +125,7 @@ export const ResourceAllocation = () => {
     >
       <div className="">
         <h2 className="container text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          Streamline your investment research and analysis
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">
